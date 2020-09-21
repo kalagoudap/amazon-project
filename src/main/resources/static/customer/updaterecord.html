@@ -1,0 +1,40 @@
+<html>
+    <head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body>
+            <form method="POST" action="/customer/update">
+                <div class="form-group">
+                CUSTOMER NAME:
+                <input type="text" class="form-control" name="NAME" id="t1" placeholder="ENTER THE CUSTOMER NAME"> 
+            </div>
+            <div class="form-group">
+                GMAIL ADDRESS:
+                <input type="email" class="form-control" name="EMAIL" id="t2" placeholder="ENTER THE MAIL ADDRESS"> 
+            </div>
+            <div class="form-group">
+                PASSWORD:
+                <input type="password" class="form-control" name="PASSWORD" id="t3" placeholder="ENTER THE PASSWORD"> 
+            </div>
+            <div class="form-group">
+                PHONE NUMBER:
+                <input type="number" class="form-control" name="PHONENUMBER" id="t5" placeholder="ENTER THE PHONE NUMBER"> 
+            </div>
+            <div class="form-group">
+                ADDRESS:
+                <input type="text" class="form-control" name="ADDRESS" id="t6" placeholder="ENTER THE ADDRESS"> 
+            </div>
+            <div class="form-group">
+                AGE:
+                <input type="number" class="form-control" name="AGE" id="t7" placeholder="ENTER THE AGE"> 
+            </div>
+            <div class="form-group">
+                PINCODE:
+                <input type="text" class="form-control" name="PINCODE" id="t8" placeholder="ENTER THE PINCODE"> 
+            </div>
+            <input type="submit" id="b1" value="SUBMIT" onclick="validation()" class="btn btn-lg btn-success">
+            <input type="reset" id="b2" value="CLEAR" class="btn btn-lg btn-danger"><br>
+            </div>          
+            </form>
+    </body>
+</html>

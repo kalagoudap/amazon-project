@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            #d1
+            {
+            color:red
+            }
+            #d2
+            {
+                color: green;
+            }
+        </style>
+       <script>
+           function validation()
+           {
+               var name=document.getElementById("t1").value;
+               var email=document.getElementById("t2").value;
+               var password=document.getElementById("t3").value;
+               var conformpassword=document.getElementById("t4").value;
+               var phnumber=eval(document.getElementById("t5").value);
+               var age=eval(document.getElementById("t6").value);
+               var flag=1;
+               if(name.length==0)
+               {
+                     document.getElementById("s1").innerHTML="error enter the mandatory field student name";
+                     flag=0;
+               }
+               if(email.length==0)
+               {
+                     document.getElementById("s2").innerHTML="error enter the mandatory field email";
+                     flag=0;
+               }
+               if(password.length==0)
+               {
+                     document.getElementById("s3").innerHTML="error enter the mandatory field password";
+                     flag=0;
+               }
+               if(conformpassword.length!=0)
+               {
+                    if(password!=conformpassword)
+                    {
+                        document.getElementById("s4").innerHTML="error enter the password and conform password same";
+                        flag=0;
+                    }     
+               }
+               else
+               {
+                    document.getElementById("s4").innerHTML="error enter the mandatory field conform password";
+                    flag=0;
+               }
+
+               if(phnumber!=null)
+               {
+                    /*if(phnumber.length=10)
+                    {
+                        document.getElementById("s5").innerHTML="error entered phone number should be 10";
+                        flag=0;
+                    }*/
+               }
+               else
+               {
+                    document.getElementById("s5").innerHTML="error enter the mandatory field phone number";
+                    flag=0;
+               }
+               if(age!=null)
+               {
+                   if(age<20)
+                   {
+                    document.getElementById("s6").innerHTML="error entered age mandatorly greater than 20(age limit)";
+                    flag=0;
+                   }
+               }
+               else
+               {
+                    document.getElementById("s6").innerHTML="error enter the age field";
+                    flag=0;
+               }
+               if(flag==1)
+               {
+                   document.getElementById("s7").innerHTML="REGISTER IS SUCCESSFUL!!!!!!!";
+                   document.getElementById("s8").innerHTML=" HI MR:"+name+" YOUR EMAIL IS :"+email+" AND YOU SET THE PASSWORD AS "+password+" AND YOU HAVE VALID OF AGE :"+age+".....!!!!!!!";
+               }
+           }
+       </script>
+    </head>
+    <head>
+        <form method="POST" action="/customer/registration">
+            <div class="form-group">
+                CUSTOMER NAME:
+                <input type="text" class="form-control" name="NAME" id="t1" placeholder="ENTER THE CUSTOMER NAME"> 
+            </div>
+            <div class="form-group">
+                GMAIL ADDRESS:
+                <input type="email" class="form-control" name="EMAIL" id="t2" placeholder="ENTER THE MAIL ADDRESS"> 
+            </div>
+            <div class="form-group">
+                PASSWORD:
+                <input type="password" class="form-control" name="PASSWORD" id="t3" placeholder="ENTER THE PASSWORD"> 
+            </div>
+            <div class="form-group">
+                CONFORM PASSWORD:
+                <input type="password" class="form-control" name="CONFORMPASSWORD" id="t4" placeholder="RE-ENTER YOUR PASSWORD"> 
+            </div>
+            <div class="form-group">
+                PHONE NUMBER:
+                <input type="number" class="form-control" name="PHONENUMBER" id="t5" placeholder="ENTER THE PHONE NUMBER"> 
+            </div>
+            <div class="form-group">
+                ADDRESS:
+                <input type="text" class="form-control" name="ADDRESS" id="t6" placeholder="ENTER THE ADDRESS"> 
+            </div>
+            <div class="form-group">
+                AGE:
+                <input type="number" class="form-control" name="AGE" id="t7" placeholder="ENTER THE AGE"> 
+            </div>
+            <div class="form-group">
+                PINCODE:
+                <input type="text" class="form-control" name="PINCODE" id="t8" placeholder="ENTER THE PINCODE"> 
+            </div>
+            <input type="submit" id="b1" value="SUBMIT" onclick="validation()" class="btn btn-lg btn-success">
+            <input type="reset" id="b2" value="CLEAR" class="btn btn-lg btn-danger"><br>
+            </div>
+            <div id="d2">
+            <span id="s7"></span><br>
+            <span id="s8"></span>
+            </div>
+            <div id="d1">
+            <span id="s1"></span><br>
+            <span id="s2"></span><br>
+            <span id="s3"></span><br>
+            <span id="s4"></span><br>
+            <span id="s5"></span><br>
+            <span id="s6"></span><br>            
+        </form>
+    </head>
+</html>

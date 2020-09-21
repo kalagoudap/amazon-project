@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style>
+            #i1
+            {
+                color: grey;
+                border: indianred;
+            }
+        </style>
+        <script>
+            function conformation()
+            {
+                confirm("DO YOU REALLY WANT TO DELETE YOUR ACCOUNT");
+            }
+        </script>
+    </head>
+    <body style="text-align: center; font-style:oblique;" id="body1">
+        <div style=" width: 200px;height: 720px; float: left; position: fixed;">
+        <table class="table col-md" style="background-color:rgb(46, 46, 48); border: 5px; border-color:red;">
+            <th>
+                <div class="col-md" style="background-color:darkorange; width: 187px;height: 100px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                             <a class="nav-link" href="updaterecord.html" style="color:white;">PROFILE UPDATE</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md" style="background-color:lightslategrey; width: 187px;height: 99px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                             <a class="nav-link" href="#hp" style="color:white;">HP PAVILION LAPTOPS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md" style="background-color: lightslategray; width: 187px;height: 99px; text-align: center;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                            <a class="nav-link" href="#lenovo" style="color:white;">LENOVO LAPTOPS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md" style="background-color:lightslategrey; width: 187px;height: 99px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                            <a class="nav-link" href="#acer" style="color:white;">SONY ACER LAPTOPS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md" style="background-color:lightslategrey; width: 187px;height: 99px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                            <a class="nav-link" href="#dell" style="color:white;">DELL ASPIRON LAPTOPS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md" style="background-color: lightslategrey; width: 187px;height: 99px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center;">
+                            <a class="nav-link" href="#apple" style="color:white;">APPLE MACBOOKS</a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="/customer/delete" method="GET">
+                <div class="col-md" style="background-color:red; width: 187px;height: 104px;">  
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" style="text-align: center; float: center;">
+                             <button class="btn btn-success btn-lg" name="account" value="delete" style="background-color: red; width: 187px;height: 70px; float: left;">ACCOUNT DELETE</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            </th>
+        </table>
+    </div>
+    <div>
+        <form action="/customer/buyproduct" Method="post">
+            <div style="float: right;" id="acer">
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/acer/a1.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/acer/a5.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="aceraspiron7" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Acer Aspiron 7 core i5 9th(8gb/2tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs58,990/-<h4></h1></td>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift i3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/acer/a8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/acer/a9.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="aceraspiron5" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Acer Aspiro5 Core i5 10thGenaration(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs53,990/-<h4></h1></td>
+                        <td><button value="acerprediator1" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerPrediator Helion 300cre(8gb/2tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,29,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/acer/a11.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/acer/22.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerprediator2" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerPrediator Helion 200cre(8gb/2tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs88,990/-<h4></h1></td>
+                        <td><button value="acerprediator3" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerPrediator Helion 350cre(8gb/2tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,80,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+            </div>
+            <div style="float: right;" id="apple">
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/apple/m1.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/apple/m4.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="apple5" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Apple macbook pro corei5(16gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,99,990/-<h4></h1></td>
+                            <td><button value="apple7" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Apple macbook pro corei7(16gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs2,29,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/apple/m3.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/apple/m6.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="mac7" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Apple touchbar pro corei7(8gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,30,990/-<h4></h1></td>
+                            <td><button value="mac5" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Apple macbook pro corei5(8gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs89,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/apple/m7.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/apple/m8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="touch9" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> Apple macbook 9thgenrration corei5(16gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,10,990/-<h4></h1></td>
+                            <td><button value="touch10" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;">Apple macbook 10thgenrration corei5(16gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs1,96,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/apple/m9.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/apple/m10.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="macbook8" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;">Apple macbook 8thgenrration corei5(8gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs79,990/-<h4></h1></td>
+                            <td><button value="mackbook10" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;">Apple macbook 10thgenrration corei5(8gb/1tb HHD)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs99,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+            </div>
+            <div style="float: right;" id="dell">
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/dell/d1.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/dell/d3.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td> 
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/dell/d4.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/dell/d5.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/dell/d8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/dell/d9.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="float: right;" id="hp">
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/hp/h1.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/hp/h3.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/hp/h5.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/hp/h4.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/hp/h8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/hp/h6.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/hp/h9.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/hp/h8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="float: right;" id="lenovo">
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/lenovo/l1.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/lenovo/l2.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/lenovo/l3.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/lenovo/l4.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/lenovo/l5.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/lenovo/l6.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/lenovo/l7.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/lenovo/l8.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+                <table class="table table-hover">
+                    <tr>
+                    <th> <img src="images/lenovo/l9.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                        <th><img src="images/lenovo/l10.png" class="rounded" style="width: 600px; height: 600px;"></th>
+                        
+                    </tr>
+                    <tr>
+                        <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                            <td><button value="acerswift" name="laptopbrand" class="btn btn-lg btn-success">BUY NOW</button><span style="color: black;"> AcerSwift3 Athol DualCore(4gb/1tb HHD/windows 10 home)</span><br><h4 style="color: rgb(255, 72, 0);">PRICE: Rs33,990/-<h4></h1></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>    
+    </body>
+</html>
